@@ -1,7 +1,7 @@
 *, :after, :before { box-sizing: border-box; }
 
 html {
-    font-size: 2.5rem; /* nebo 100% = 16px (výchozí) */
+    font-size: 0.8rem; /* nebo 100% = 16px (výchozí) */
     
   }
 
@@ -29,12 +29,12 @@ body {
     justify-content: center;  /* vodorovně na střed */
     align-items: center;      /* svisle na střed, pokud potřebuješ */
     min-height: 100vh;  
-    padding: 20px;
+    padding: 10px;
     }
 
 section {
-    padding: 3rem 1rem;
-  }
+padding: 1rem 1rem;
+}
 
 .misto{
     background-color: rgb(230, 230, 203);
@@ -42,17 +42,17 @@ section {
 }
 
 .card{
-    padding: 20px;
+    padding: 10px;
 }
 
 h1{
     text-align: center;
     font-style: italic;
     font-size: 5rem;
-    margin: 2rem 0;
+    margin: 2.5rem 0rem;
 }
 section h2{
-    background-color: #a0c5a2;
+    background-color: #c5d4c6;
     padding: 10px;
     text-align: center;
     color:white;
@@ -66,13 +66,13 @@ section h2{
     .misto_obrazky{
         display: flex;
         flex-direction: row;
-        padding: 20px;
+        padding: 10px;
         width: 100%;
     }
 
     .misto_obrazky img{
         padding: 25px;
-        height: 600px;       /* nastav stejnou výšku */
+        height: 300px;       /* nastav stejnou výšku */
         width: 100%;         /* zachová poměr stran */
         object-fit: contain; /* nebo cover, podle potřeby */
         vertical-align: middle; /* vyrovná je na střed řádku */
@@ -86,8 +86,17 @@ section h2{
 
 @media only screen and (min-width: 600px) and (max-width: 1100px) {
 
+       html {
+    font-size: 1.2rem; /* nebo 100% = 16px (výchozí) */  
+  }
+
     img {
         width: 100%;
+    }
+
+    .potkamese img{
+        width: 120%;
+        padding: 0;
     }
 
     .misto_obrazky{
@@ -97,8 +106,8 @@ section h2{
     }
 
     .misto_obrazky img{
-        padding: 5px;
-        height: 300px;       /* nastav stejnou výšku */
+        padding: 10px;
+        height: 400px;       /* nastav stejnou výšku */
         width: 100%;         /* zachová poměr stran */
         object-fit: contain; /* nebo cover, podle potřeby */
         vertical-align: middle; /* vyrovná je na střed řádku */
@@ -106,6 +115,14 @@ section h2{
 }
 
     @media only screen and (max-width: 600px) {
+
+    html {
+        font-size: 0.9rem; /* nebo 100% = 16px (výchozí) */  
+        }
+
+      img {
+        width: 100%;
+         }
 
         .misto_obrazky {
           width: 100vw;
