@@ -57,7 +57,11 @@ section h2{
     color:white;
 }
 
+h3{
+    padding: 15px;
+}
 @media only screen and (min-width: 1100px) {
+
     img {
         width: 100%;
     }
@@ -76,6 +80,7 @@ section h2{
         object-fit: contain; /* nebo cover, podle potřeby */
         vertical-align: middle; /* vyrovná je na střed řádku */
     }
+
     .separator{
         height: 15px;             /* výška pruhu */
         background-color: #a69514; /* modrý pruh */
