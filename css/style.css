@@ -2,7 +2,6 @@
 
 html {
     font-size: 1.3rem; /* nebo 100% = 16px (výchozí) */
-    
   }
 
 body {
@@ -21,7 +20,9 @@ body {
     font-weight: lighter;
     font-style: normal; 
     text-align: center;
+    overflow-x: hidden;
 }
+
     main{
     display: flex;
     flex-direction: column;
@@ -143,7 +144,7 @@ h3{
          }
 
         .misto_obrazky {
-          width: 100vw;
+          width: 100%;
           height: auto; /* Neomezujeme výšku */
           overflow: visible; /* Nechceme nic skrývat */
         }
