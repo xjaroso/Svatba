@@ -137,6 +137,9 @@ h3{
 
     html {
         font-size: 0.9rem; /* nebo 100% = 16px (výchozí) */   
+        }
+
+    section{
         padding-left: 1rem;
         padding-right: 1rem;
         }
