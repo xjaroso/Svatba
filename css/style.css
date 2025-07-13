@@ -139,6 +139,12 @@ h3{
         font-size: 0.9rem; /* nebo 100% = 16px (výchozí) */   
         }
 
+        body{
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
     section{
         padding-left: 1rem;
         padding-right: 1rem;
