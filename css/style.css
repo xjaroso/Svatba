@@ -136,7 +136,9 @@ h3{
     @media only screen and (max-width: 600px) {
 
     html {
-        font-size: 0.9rem; /* nebo 100% = 16px (výchozí) */  
+        font-size: 0.9rem; /* nebo 100% = 16px (výchozí) */   
+    padding-left: 1rem;
+    padding-right: 1rem;
         }
 
       img {
@@ -154,5 +156,7 @@ h3{
           height: auto; /* Zachová poměr stran obrázku */
           display: block;
         }
+
+
       }
 
