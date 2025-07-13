@@ -1,7 +1,7 @@
 *, :after, :before { box-sizing: border-box; }
 
 html {
-    font-size: 1rem; /* nebo 100% = 16px (výchozí) */
+    font-size: 1.3rem; /* nebo 100% = 16px (výchozí) */
     
   }
 
@@ -48,8 +48,9 @@ h1{
     text-align: center;
     font-style: italic;
     font-size: 2rem;
-    margin: 2.5rem 0rem;
+    margin: 2.8rem 0rem;
 }
+
 section h2{
     background-color: #c5d4c6;
     padding: 10px;
@@ -57,23 +58,22 @@ section h2{
     color:white;
 }
 
-
-
 h3{
     padding: 15px;
 }
+
+/*min width třeba 1600 px a více upravit to tak aby byl ten header image zase ještě větší*/
 @media only screen and (min-width: 1100px) {
 
     img {
         width: 100%;
     }
- 
 
-.green {
+    .more {
     display: flex;
     text-align: center;
     gap: 4rem;
-}
+    }
 
     .misto_obrazky{
         display: flex;
