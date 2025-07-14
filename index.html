@@ -92,13 +92,27 @@ A také zda budete pro ně chtít plnohodnotnou nebo dětskou porci k obědu.</p
               </footer></section>  </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
 
-<script>
-  const heslo = prompt("Tento web je určen pouze pozvaným hostům na svatbu. Zadejte heslo:");
-  if (heslo !== "zuzanaajan") {
-    document.body.innerHTML = "<h2>Přístup odepřen.</h2><p>Kontaktujte nevěstu nebo ženicha pro heslo.</p>";
-  }
-</script>
 
+<script>
+  // SHA-256 hash hesla: "mojeheslo"
+  const correctHash = "23ef9b1527ceee1ab7291aa9ed2c2532619e982ed1d77be9eed57b3a58858b15";
+
+  async function checkPassword() {
+    const password = prompt("Tento web je určen pouze pozvaným hostům na svatbu. Zadejte heslo:");
+
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+
+    if (hashHex !== correctHash) {
+      document.body.innerHTML = "<h2>Přístup odepřen</h2>";
+    }
+  }
+
+  checkPassword();
+</script>
 
 </body>
 </html>
