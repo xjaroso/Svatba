@@ -23,6 +23,9 @@
     </div>
    </section>
 
+
+
+
       <section id="info" class="container">
         <h1>A proč?</h1>
         <p style="text-align: center;">Protože se chceme vzít a chceme, abyste s námi byli u toho. ❤️❤️❤️ </p>
@@ -88,5 +91,14 @@ A také zda budete pro ně chtít plnohodnotnou nebo dětskou porci k obědu.</p
                 <p>Těšíme se na Vás! 💕 Web vytvářela nevěsta Zuzka Jarošová s nápovědou a korekturou kódu od ChatGPT. </p>
               </footer></section>  </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+
+<script>
+  const heslo = prompt("Tento web je určen pouze pozvaným. Zadejte heslo:");
+  if (heslo !== "janazuzana") {
+    document.body.innerHTML = "<h2>Přístup odepřen.</h2><p>Kontaktujte nevěstu nebo ženicha pro heslo.</p>";
+  }
+</script>
+
+
 </body>
 </html>
