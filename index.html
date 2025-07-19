@@ -107,7 +107,7 @@ A také zda budete pro ně chtít plnohodnotnou nebo dětskou porci k obědu.</p
     const hashHex = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
 
     if (hashHex !== correctHash) {
-      document.body.innerHTML = "<h2>Přístup odepřen</h2>";
+      document.body.innerHTML = "<h2>apomněl/a si v předchozím kroku vyplnit heslo do kolonky a potvrdit! <br> Načti stránku znovu s vyplň heslo dle karty v pozvánce.</h2>";
     }
   }
 
