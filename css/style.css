@@ -77,11 +77,16 @@ h3{
         width: 100%;
     }
 
-    .more {
-    display: flex;
-    text-align: center;
-    gap: 4rem;
-    }
+.more{
+  display:flex;
+  gap:2rem;              /* mezery mezi sloupci */
+  justify-content:stretch;  /* nebo default; space-between nedávej */
+  width:100%;
+}
+.more > div{
+  flex:1 1 0;            /* všechny tři stejně široké */
+  min-width:0;           /* aby se dlouhý text zalomil, nevytekl ven */
+}
 
     .misto_obrazky{
         display: flex;
