@@ -15,15 +15,51 @@
 <body>
     <main>
     <img class="potkamese" width="100%" src="images/head.png" alt="head">
-    
-      <section>
+     <section>
+          <center><div style="color:black; font-size: 48px; font-weight: normal" id="dday"></div></center>
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("October 4, 2025 11:00:00").getTime();
+ 
+// Update the count down every 1 second
+var x = setInterval(function() {
+ 
+  // Get todays date and time
+  var now = new Date().getTime();
+ 
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+ 
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+  // Display the result in the element with id="demo"
+  document.getElementById("dday").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+ 
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("dday").innerHTML = "KONEC ODPOČTU";
+  }
+}, 1000);
+</script>  
+  <p></p>
     <div class="My">
       <h1>A s kým?</h1>
       <h2>Snoubenci</h2>
       <h3>Zuzana Jarošová a Jan Řihošek</h3>
       <div><img src="images/my.png" alt="my"></div>
     </div>
+
+
+ 
+
    </section>
+
 
 
       <section id="info" class="container">
@@ -74,7 +110,7 @@
         <h1>A jak se tam dostaneme?</h1>
         <p>Počítejte prosím s vlastní dopravou. <br> Přímo na místě je dostatek parkovacích míst. <br>
           <p><h3>Doprava městskou hromadnou dopravou</h3>
-          Je to možnost, na svatebním místě budete cca. hodinu před obřadem. Zastávka je přímo u svatebnímo místa a jmenuje se <a href="https://mapy.com/cs/zakladni?source=pubt&id=15314674&timeboard=%7B%22l%22%3A%22775005%22%2C%22d%22%3A-1%2C%22i%22%3A1%2C%22v%22%3A%7B%22from%22%3A%222025-09-18T00%3A00%3A00%2B02%3A00%22%2C%22to%22%3A%222025-10-19T00%3A00%3A00%2B02%3A00%22%7D%7D&x=17.3895149&y=49.3216362&z=17">Horní Zahrady, Za Včelínem.</a> Autobus číslo 5 vyjíždí z hlavního nádraží 9:44.
+          Je to možnost, na svatebním místě budete cca. hodinu před obřadem. Zastávka je přímo u svatebnímo místa a jmenuje se <a href="https://mapy.com/cs/zakladni?source=pubt&id=15314674&timeboard=%7B%22l%22%3A%22775005%22%2C%22d%22%3A-1%2C%22i%22%3A1%2C%22v%22%3A%7B%22from%22%3A%222025-09-18T00%3A00%3A00%2B02%3A00%22%2C%22to%22%3A%222025-10-19T00%3A00%3A00%2B02%3A00%22%7D%7D&x=17.3895149&y=49.3216362&z=17">Horní Zahrady, Za Včelínem.</a> <b>Autobus číslo 5 vyjíždí z hlavního nádraží 9:44.</b>
       <br><img src="images/bus.png" alt="bus5"></p>
           <p>Pokud budete chtít v Kroměříži doporučit tipy na ubytování, dejte nám vědět. :-)</p>
                  <h3>Odvoz ze svatby</h3>
